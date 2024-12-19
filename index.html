@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-image: url('05-wallpaper-macos-sonoma-1920x1024.jpg');
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: repeat;
+      overflow: hidden;
+    }
+
+    .window-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .macos-window {
+      position: absolute;
+      
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      border: 1px solid #ddd;
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+      cursor: grab;
+    }
+
+    .macos-titlebar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 32px;
+      background-color: #e9e9eb;
+      border-bottom: 1px solid #ccc;
+      padding: 0 8px;
+      cursor: grab;
+    }
+
+    .macos-buttons {
+      display: flex;
+      gap: 6px;
+    }
+
+    .macos-button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .macos-button.close {
+      background-color: #ff5f57;
+    }
+
+    .macos-button.minimize {
+      background-color: #ffbd2e;
+    }
+
+    .macos-button.maximize {
+      background-color: #28c840;
+    }
+
+    .macos-content {
+      padding: 16px;
+      color: #333;
+    }
+    
+    .macos-content.terminal {
+      background-color: black;
+      color: white;
+      font-family: monospace;
+      padding: 10px;
+      overflow-y: auto;
+      height: calc(100% - 30px);
+    }
+
+    .terminal-output p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .terminal-output span {
+      font-weight: bold;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <div class="window-container">
+    <div class="macos-window" style="top: 50px; left: 110; width: 400px;">
+      <div class="macos-titlebar">
+        <div class="macos-buttons">
+          <div class="macos-button close"></div>
+          <div class="macos-button minimize"></div>
+          <div class="macos-button maximize"></div>
+        </div>
+        <div class="macos-title">  <span style="padding-left: 10px ;"></span>About me</div>
+      </div>
+      <div class="macos-content" style="background-color: dimgray;">
+        <div style="font-family: monospace; background-color: dimgray;color: #fff;padding: 5px;">
+            <p><span style="color: lightpink;">import</span> <span style="color: #ffbd2e;">Developer</span> <span style="color: lightpink;">from</span> <span style="color: deepskyblue;">'elielF'</span>;</p>
+            <p><span style="color: lightpink; padding-left: 20px;">class</span> <span style="color: #ffbd2e;">AboutMe</span> <span style="color: lightpink;">extends</span> <span style="color: #ffbd2e;">Developer </span>{</p>
+            <p><span style="color: deepskyblue; padding-left: 40px;">name     = 'FILHO, eliel'</span>;</p>
+            <p><span style="color: deepskyblue; padding-left: 40px;">area     = 'Full stack Development'</span>;</p>
+            <p><span style="color: deepskyblue; padding-left: 40px;">local     = 'Brazil'</span>;</p>
+            <p style="padding-left: 20px;">}</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="macos-window" style="top: 350px; left: 80px; width: 600px;">
+      <div class="macos-titlebar">
+        <div class="macos-buttons">
+          <div class="macos-button close"></div>
+          <div class="macos-button minimize"></div>
+          <div class="macos-button maximize"></div>
+        </div>
+        <div class="macos-title">  <span style="padding-left: 10px ;"></span>Skills</div>
+      </div>
+      <div class="macos-content" style="background-color: dimgray;">
+        <div style="font-family: monospace; background-color:dimgray;color: #fff;padding: 5px;">
+            <p><span style="color: lightpink;">import</span> <span style="color: #ffbd2e;">Developer</span> <span style="color: lightpink;">from</span> <span style="color: deepskyblue;">'elielF'</span>;</p>
+            <p><span style="color: lightpink; padding-left: 20px;">class</span> <span style="color: #ffbd2e;">Skills</span> <span style="color: lightpink;">extends</span> <span style="color: #ffbd2e;">Developer </span>{</p>
+            <p><span style="color: deepskyblue; padding-left: 40px;">frontEnd     = ['HTML', 'CSS', 'JavaScript', 'SASS', 'Vue.js']</span>;</p>
+            <p><span style="color: deepskyblue; padding-left: 40px;">backEnd     = ['Node.js', 'Python', 'Java', 'SQL', 'C++']</span>;</p>
+            <p><span style="color: deepskyblue; padding-left: 40px;">tools     = ['Git', 'GitHub', 'Docker', 'AWS' 'Figma', 'Firebase']</span>;</p>
+            <p><span style="color: deepskyblue; padding-left: 40px;">frameworks     = ['Flutter', 'React Native']</span>;</p>
+            <p><span style="color: deepskyblue; padding-left: 40px;">others     = ['Data Science', 'Machine Learning']</span>;</p>
+            <p style="padding-left: 20px;">}</p>
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class="window-container">
+
+      <div class="macos-window" style="top: 110px; left: 250px; width: 400px;">
+        <div class="macos-titlebar">
+          <div class="macos-buttons">
+            <div class="macos-button close"></div>
+            <div class="macos-button minimize"></div>
+            <div class="macos-button maximize"></div>
+          </div>
+          <div class="macos-title">  <span style="padding-left: 10px ;"></span>Contacts</div>
+        </div>
+        <div class="macos-content" style="background-color: dimgray; color: white; padding: 15px; font-family: monospace;">
+          <h3 style="color: lightpink;">My Contacts</h3>
+          <ul style="list-style: none; padding: 0; font-size: 14px; line-height: 1.8;">
+            <li>
+              <span style="color: deepskyblue;">Email:</span> 
+              <a href="mailto:eliel.filho.705@ufrn.edu.br" style="color: #ffbd2e; text-decoration: none;">eliel.filho.705@ufrn.edu.br</a>
+            </li>
+            <li>
+              <span style="color: deepskyblue;">GitHub:</span> 
+              <a href="https://github.com/3lielF" target="_blank" style="color: #ffbd2e; text-decoration: none;">github.com/elielF</a>
+            </li>
+            <li>
+              <span style="color: deepskyblue;">LinkedIn:</span> 
+              <a href="https://github.com/3lielF/3lielF/blob/main/www.linkedin.com/in/eliel-filho-20819a27a" target="_blank" style="color: #ffbd2e; text-decoration: none;">linkedin.com/in/elielF</a>
+            </li>
+            <li>
+              <span style="color: deepskyblue;">Phone:</span> 
+              <span style="color: #ffbd2e;">+55 (84) 99677-8305</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="window-container"></div>
+ 
+    <div class="macos-window" style="top: 400px; left: 750px; width: 500px; height: 300px;">
+      <div class="macos-titlebar">
+        <div class="macos-buttons">
+          <div class="macos-button close"></div>
+          <div class="macos-button minimize"></div>
+          <div class="macos-button maximize"></div>
+        </div>
+        <div class="macos-title"><span style="padding-left: 10px;"></span>Terminal</div>
+      </div>
+      <div class="macos-content terminal">
+        <div class="terminal-output" id="terminalOutput"></div>
+        <!-- <div class="terminal-output">
+          <p><span style="color: lightgreen;">root@root</span>:~$ <span style="color: white;">ls</span></p>
+          <p style="color: white;">about-me.txt  skills.json  projects/</p>
+          <p><span style="color: lightgreen;">root@root</span>:~$ <span style="color: white;">cat about-me.txt</span></p>
+          <p style="color: white;">Hi, I'm Eliel Filho, a Full Stack Developer based in Brazil.</p>
+          <p><span style="color: lightgreen;">root@root</span>:~$ <span style="color: white;">exit</span></p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="window-container"></div>
+  <div class="macos-window" style="top: 10px; left: 1050px; width: 270px; height: 190px;">
+    <div class="macos-titlebar">
+      <div class="macos-buttons">
+        <div class="macos-button close"></div>
+        <div class="macos-button minimize"></div>
+        <div class="macos-button maximize"></div>
+      </div>
+      <div class="macos-title"><span style="padding-left: 10px;"></span>media.gif</div>
+    </div>
+    <div class="macos-content terminal">
+      <img src="kermit-typing.gif" width="249px" height="139px">
+    </div>
+  </div>
+ 
+</body>
+<script src="script.js"> </script>
+</html>
